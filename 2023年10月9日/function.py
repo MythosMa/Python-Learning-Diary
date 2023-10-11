@@ -24,4 +24,13 @@ def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
 def foo(name, /, **kwds):
     return 'name' in kwds
 
-print(foo(1, name=2))
+# print(foo(1, name=2))
+
+pool = [1, 2, 3, 4, 5, 6, 7]
+
+def roundPlay():
+    result = pool[2:]
+    pool = pool[:2]
+
+roundPlay()
+print(pool)

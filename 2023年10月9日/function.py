@@ -21,16 +21,19 @@ def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
 # parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments
 # parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword
 
-def foo(name, /, **kwds):
-    return 'name' in kwds
+# def foo(name, /, **kwds):
+#     return 'name' in kwds
 
-# print(foo(1, name=2))
+# # print(foo(1, name=2))
 
-pool = [1, 2, 3, 4, 5, 6, 7]
+# pool = [1, 2, 3, 4, 5, 6, 7]
 
-def roundPlay():
-    result = pool[2:]
-    pool = pool[:2]
+# def roundPlay():
+#     result = pool[2:]
+#     pool = pool[:2]
 
-roundPlay()
-print(pool)
+# roundPlay()
+# print(pool)
+
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(a[:9])
